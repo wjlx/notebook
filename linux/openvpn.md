@@ -182,6 +182,16 @@ comp-lzo              # 压缩数据，服务端有指定客户端也要
 verb 3
 tls-auth ta.key 1　　 ; 服务器需要设置为0， 客户端需要配置为1.
 cipher AES-256-CBC　　; ubuntu和os x上面必须指定，否则会出现错误。
+mute 20
+user nobody
+group nobody
+ping 15
+ping-restart 45
+ping-timer-rem
+auth-nocache
+status /var/log/openvpn/openvpn-status.log
+log /var/log/openvpn/openvpn.log
+writepid /var/run/openvpn/client.pid
 ```
 
 ** 1. 如何给客户端指定配置，比如不同的客户端不同的ip地址、推送不同路由等**
