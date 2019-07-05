@@ -1,3 +1,11 @@
+# centos python3 caffe 安装
+
+### 基础包
+```
+yum -y install leveldb-devel snappy-devel opencv-devel hdf5-devel gflags-devel glog-devel lmdb-devel
+yum -y install openblas-devel python36-devel
+```
+
 ### boost安装
 ```
 wget https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.gz
