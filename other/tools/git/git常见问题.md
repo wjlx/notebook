@@ -77,3 +77,17 @@
 ```md
 git revert <commit>
 ```
+
+## 分支管理
+
+### 1. 删除不存在对应远程分支的本地分支
+
+```md
+git remote prune origin
+```
+
+更简单的方法是使用这个命令，它在fetch之后删除掉没有与远程分支对应的本地分支：
+
+```md
+git fetch -p
+```
