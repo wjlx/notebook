@@ -40,6 +40,7 @@ Header部分只有一行，包括三个字段：type（必需）、scope（可�
 以动词开头，使用第一人称现在时，比如change，而不是changed或changes
 第一个字母小写
 结尾不加句号（.）
+
 ### Body
 
 Body 部分是对本次 commit 的详细描述，可以分成多行。下面是一个范例。
