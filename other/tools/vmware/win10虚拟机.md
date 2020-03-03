@@ -8,6 +8,14 @@
 卸载目录： umount -f /home/mnt
 ```
 
+## 系统挂载
+
+修改/etc/fstab文件
+
+```txt
+.host:/github   /home/wjl/github fuse.vmhgfs-fuse allow_other,uid=1000,umask=133,defaults       0 0
+```
+
 ## [umask 权限分配](https://docs.oracle.com/cd/E19683-01/817-3814/userconcept-95347/index.html)
 
 | umask Octal Value | File Permissions | Directory Permissions |
